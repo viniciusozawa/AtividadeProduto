@@ -1,0 +1,68 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 24 de mar. de 2026, 18:18:39
+    Author     : yuji
+
+    código criado pelo AI
+*/
+
+body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f6f8;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        background-color: white;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    th {
+        background-color: #2c3e50;
+        color: white;
+        padding: 12px;
+        text-align: left;
+    }
+
+    td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    button {
+        padding: 6px 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    button:hover {
+        opacity: 0.8;
+    }
+
+    /* Botões diferentes */
+    form button {
+        background-color: #3498db;
+        color: white;
+    }
+
+    form:last-child button {
+        background-color: #e74c3c;
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 20px;
+    }
