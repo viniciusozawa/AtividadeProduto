@@ -98,7 +98,7 @@ public class ProdutoController extends HttpServlet{
         request.setAttribute("descricao", descricaoIn);
         request.setAttribute("precoVenda", precoVendaIn);
         request.setAttribute("precoCompra",precoCompraIn );
-        request.setAttribute("quantEstoque",quantEstoqueIn);
+        request.setAttribute("quantidadeEstoque",quantEstoqueIn);
         request.setAttribute("opcao", "confirmarAlterar");
         request.setAttribute("mensagem", "edite");
         encaminharParaPagina(request, response);
@@ -129,7 +129,7 @@ public class ProdutoController extends HttpServlet{
         request.setAttribute("descricao", "");
         request.setAttribute("precoVenda", 0);
         request.setAttribute("precoCompra",0 );
-        request.setAttribute("quantEstoque",0);
+        request.setAttribute("quantidadeEstoque",0);
         request.setAttribute("opcao", "cadastrar");
         encaminharParaPagina(request, response);
     }
@@ -139,7 +139,7 @@ public class ProdutoController extends HttpServlet{
         request.setAttribute("descricao", descricaoIn);
         request.setAttribute("precoVenda", precoVendaIn);
         request.setAttribute("precoCompra",precoCompraIn );
-        request.setAttribute("quantEstoque",quantEstoqueIn);
+        request.setAttribute("quantidadeEstoque",quantEstoqueIn);
         request.setAttribute("opcao", "confirmarExcluir");
         request.setAttribute("mensagem", "Confirmar os dados e clique em salvar");
         encaminharParaPagina(request, response);

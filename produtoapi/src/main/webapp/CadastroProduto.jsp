@@ -19,7 +19,7 @@
         <form type="hidden" name="cadastro" method="get" 
               action="${pageContext.request.contextPath}${URL_BASE}/ProdutoController">
             <input type="hidden" id="opcao" name="opcao" value="${opcao}">
-            <p>${opcao}</p>
+            
             <input type="hidden" name="codigo" value="${codigo}">
             <p><label>Nome:</label> <input type="text" name="descricao" required="" value="${descricao}" size="40"></p>
             <p><label>Preço de Venda:</label> <input type="number" name="precoVenda" required="" value="${precoVenda}" size="5"></p>
@@ -29,13 +29,13 @@
             <input type="submit" value="Salvar" name="Salvar" style="float:left; margin-right: 3px">
         </form>
             
-        <form id="cadastroForm" name="cadastro" method="get" action="${pageContext.request.contextPath}${URL_BASE}/CidadeControlador">
+        <form id="cadastroForm" name="cadastro" method="get" action="${pageContext.request.contextPath}${URL_BASE}/ProdutoController">
             <input type="submit" value="Cancelar" name="btnCancelar">
              <input type="hidden" name="opcao" value="cancelar">
             
         </form>    
             
-        <h3>${mensagem}</h3>
+        
         <table border="1">
             <tr>Produtos</tr>
             <c:if test="${not empty produtos}">
@@ -55,7 +55,7 @@
                     <td>${produtos.codigo}</td>
                     <td>${produtos.descricao}</td>
                     <td><span>R$</span>${produtos.precoVenda}</td>
-                    <td>${produtos.precoCompra}</td>
+                    <td><span>R$</span>${produtos.precoCompra}</td>
                     <td>${produtos.quantidadeEstoque}</td>
                     <td>
                         <form type="hidden" name="cadastro" method="get" action="${pageContext.request.contextPath}${URL_BASE}/ProdutoController">
