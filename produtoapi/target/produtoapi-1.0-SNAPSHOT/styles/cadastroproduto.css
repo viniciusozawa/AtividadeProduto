@@ -8,61 +8,114 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
 
     código criado pelo AI
 */
-
 body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f6f8;
-    }
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
 
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-        background-color: white;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        border-radius: 8px;
-        overflow: hidden;
-    }
+/* Centralizar tudo */
+.container {
+    width: 60%;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
 
-    th {
-        background-color: #2c3e50;
-        color: white;
-        padding: 12px;
-        text-align: left;
-    }
+/* Título */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
-    td {
-        padding: 10px;
-        border-bottom: 1px solid #ddd;
-    }
+/* Formulário */
+form {
+    margin-bottom: 20px;
+}
 
-    tr:hover {
-        background-color: #f1f1f1;
-    }
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
 
-    button {
-        padding: 6px 10px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-weight: bold;
-    }
+/* Inputs */
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
 
-    button:hover {
-        opacity: 0.8;
-    }
+/* Efeito ao clicar */
+input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52,152,219,0.5);
+}
 
-    /* Botões diferentes */
-    form button {
-        background-color: #3498db;
-        color: white;
-    }
+/* Botão salvar */
+input[type="submit"] {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
 
-    form:last-child button {
-        background-color: #e74c3c;
-    }
+/* Botão cancelar */
+form#cadastroForm input[type="submit"] {
+    background-color: #e74c3c;
+}
 
-    h2 {
-        text-align: center;
-        margin-top: 20px;
-    }
+/* Hover botão */
+input[type="submit"]:hover {
+    opacity: 0.85;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Hover linha */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Botões da tabela */
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #3498db;
+    color: white;
+}
+
+td:last-child button {
+    background-color: #e74c3c;
+}
