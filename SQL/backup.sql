@@ -1,6 +1,6 @@
 -- --------------------------------------------------------
 -- Servidor:                     127.0.0.1
--- Versão do servidor:           8.0.42 - MySQL Community Server - GPL
+-- Versão do servidor:           8.0.43 - MySQL Community Server - GPL
 -- OS do Servidor:               Win64
 -- HeidiSQL Versão:              12.10.0.7000
 -- --------------------------------------------------------
@@ -29,10 +29,8 @@ CREATE TABLE IF NOT EXISTS `cidade` (
   PRIMARY KEY (`codigo`)
 ) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Copiando dados para a tabela bdestudo.cidade: ~20 rows (aproximadamente)
+-- Copiando dados para a tabela bdestudo.cidade: ~18 rows (aproximadamente)
 INSERT INTO `cidade` (`codigo`, `nome`, `uf`) VALUES
-	(5, 'werw', 'a'),
-	(6, 's', 's'),
 	(7, 'a', 'a'),
 	(8, 'as', 'as'),
 	(9, 'k', ''),
@@ -59,9 +57,17 @@ CREATE TABLE IF NOT EXISTS `produto` (
   `precoCompra` double DEFAULT NULL,
   `quantidadeEstoque` int DEFAULT NULL,
   PRIMARY KEY (`codigo`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 
 -- Copiando dados para a tabela bdestudo.produto: ~0 rows (aproximadamente)
+INSERT INTO `produto` (`codigo`, `descricao`, `precoVenda`, `precoCompra`, `quantidadeEstoque`) VALUES
+	(1, 'Agua', 20, 10, 30),
+	(2, 'da', 2, 1, 2),
+	(4, 'as', 2, 2, 2),
+	(5, 's', 2, 1, 2),
+	(6, 'Limonada', 20, 40, 90),
+	(7, 'Maçaa', 10, 20, 12),
+	(9, 'amilton ', 23, 12, 12);
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
