@@ -1,0 +1,20 @@
+# Maven
+target/
+
+# Compilados Java
+*.class
+
+# Logs
+*.log
+
+# IDEs
+.idea/
+.vscode/
+
+# NetBeans
+nbproject/private/
+build/
+
+# Sistema
+.DS_Store
+Thumbs.db
