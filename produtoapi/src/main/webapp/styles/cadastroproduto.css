@@ -6,7 +6,8 @@ body {
 
 /* Container central */
 .container {
-    width: 400px;
+    width: 90%;
+    max-width: 900px;
     margin: 50px auto;
     background: white;
     padding: 30px;
@@ -126,4 +127,15 @@ button {
 
 td:last-child button {
     background-color: #e74c3c;
+}
+
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    min-width: 700px; /* força largura mínima */
+    width: 100%;
 }

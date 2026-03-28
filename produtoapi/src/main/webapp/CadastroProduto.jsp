@@ -16,7 +16,7 @@
     </head>
     <body>
 
-
+      <div class="container">
         <h1>Cadastro Produto</h1>
         <form type="hidden" name="cadastro" method="get" 
               action="${pageContext.request.contextPath}${URL_BASE}/ProdutoController">
@@ -37,10 +37,13 @@
 
         </form>    
 
-
+            <div class="table-wrapper">
         <table border="1">
-            <tr>Produtos</tr>
+           
             <c:if test="${not empty produtos}">
+                 <caption style="padding:10px; font-size:20px; font-weight:bold;">
+                Produtos
+                </caption>
                 <tr>
                     <th>CÓDIGO </th>
                     <th>NOME/DESCRIÇÃO</th>
@@ -86,8 +89,8 @@
 
             </c:forEach>
         </table>
-
-
+         </div>
+       </div>
 
     </body>
 </html>
